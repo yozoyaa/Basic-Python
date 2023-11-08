@@ -1,0 +1,8 @@
+print(f"{'UNIVERSITAS BUDI LUHUR' : ^150}")
+print(f"{'Jl. Ciledug Raya Petukangan Utara Pesanggrahan Jakarta Selatan 12260' : ^150}")
+print('='*200)
+print("\tNAMA \t \t \t : FICKRY IMAMSYAH")
+print("\tNIM \t \t \t : 2318632158")
+print("\tProgram Studi \t : Teknik Informatika")
+print("\tFakultas \t \t : Teknologi Informasi")
+print("="*200)
