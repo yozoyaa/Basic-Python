@@ -1,2 +1,2 @@
 # BPD_tercinta
-python file for BPD course in Budi Luhur University.
+tugas-tugas Bahasa pemograman dasar untuk angkatan 2023/2024 dari Universitas Budi Luhur :D
