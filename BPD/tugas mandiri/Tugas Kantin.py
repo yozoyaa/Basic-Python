@@ -2,6 +2,10 @@ nama_pelanggan = input("Masukkan Nama Pelanggan: ")
 jenis_pembeli = input("Pembeli (Mahasiswa atau Karyawan): ")
 menu_utama = input("Masukkan Menu yang dipilih (Makanan/Minuman/Cemilan): ")
 
+nama_pelanggan = nama_pelanggan.lower()
+jenis_pembeli = jenis_pembeli.lower()
+menu_utama = menu_utama.lower()
+
 menu_makanan = ""
 menu_minuman = ""
 menu_cemilan = ""
@@ -12,105 +16,109 @@ jumlah_pesan_makanan = 0
 jumlah_pesan_minuman = 0
 jumlah_pesan_cemilan = 0
 
-if menu_utama == "Makanan":
+if menu_utama == "makanan":
     menu_makanan = input('Pilih Makanan (Ayam penyet/Soto ayam/Nasi goreng): ')
-    if menu_makanan == "Ayam penyet":
+    if menu_makanan == "ayam penyet":
         harga_makanan = 20000
-    elif menu_makanan == "Soto ayam":
+    elif menu_makanan == "soto ayam":
         harga_makanan = 15000
-    elif menu_makanan == "Nasi goreng":
+    elif menu_makanan == "nasi goreng":
         harga_makanan = 18000
     else:
         harga_makanan = 0
     jumlah_pesan_makanan = int(input('Masukkan Jumlah Pesanan Makanan: '))
 
-elif menu_utama == "Minuman":
+elif menu_utama == "minuman":
     menu_minuman = input('Pilih Minuman (Teh manis/Es kopi/Nutrisar): ')
-    if menu_minuman == "Teh manis":
+    if menu_minuman == "teh manis":
         harga_minuman = 5000
-    elif menu_minuman == "Es kopi":
+    elif menu_minuman == "es kopi":
         harga_minuman = 6000
-    elif menu_minuman == "Nutrisar":
+    elif menu_minuman == "nutrisar":
         harga_minuman = 4000
     else:
         harga_minuman = 0
     jumlah_pesan_minuman = int(input('Masukkan Jumlah Pesanan Minuman: '))
 
-elif menu_utama == "Cemilan":
+elif menu_utama == "cemilan":
     menu_cemilan = input('Pilih Cemilan (Aneka gorengan/Ciki-Ciki/Basreng): ')
-    if menu_cemilan == "Aneka gorengan":
+    if menu_cemilan == "aneka gorengan":
         harga_cemilan = 2500
-    elif menu_cemilan == "Ciki-Ciki":
+    elif menu_cemilan == "ciki ciki":
         harga_cemilan = 5000
-    elif menu_cemilan == "Basreng":
+    elif menu_cemilan == "basreng":
         harga_cemilan = 7000
     else:
         harga_cemilan = 0
     jumlah_pesan_cemilan = int(input('Masukkan Jumlah Pesanan Cemilan: '))
-elif menu_utama == "Makanan Dan Minuman":
+elif menu_utama == "makanan Dan minuman":
     menu_makanan = str(input('Pilih Makanan (Ayam penyet/Soto ayam/Nasi goreng): '))
-    if menu_makanan == "Ayam penyet":
+    if menu_makanan == "ayam penyet":
         harga_makanan = 20000
-    elif menu_makanan == "Soto ayam":
+    elif menu_makanan == "soto ayam":
         harga_makanan = 15000
-    elif menu_makanan == "Nasi goreng":
+    elif menu_makanan == "nasi goreng":
         harga_makanan = 18000
     else:
         harga_makanan = 0
     jumlah_pesan_makanan = int(input('Masukkan Jumlah Pesanan Makanan: '))
     menu_minuman = str(input('Pilih Minuman (Teh manis/Es kopi/Nutrisar): '))
-    if menu_minuman == "Teh manis":
+    if menu_minuman == "teh manis":
         harga_minuman = 5000
-    elif menu_minuman == "Es kopi":
+    elif menu_minuman == "es kopi":
         harga_minuman = 6000
-    elif menu_minuman == "Nutrisari":
+    elif menu_minuman == "nutrisari":
         harga_minuman = 4000
     else:
         harga_minuman = 0
     jumlah_pesan_minuman = int(input('Masukkan Jumlah Pesanan Minuman: '))
-elif menu_utama == "Makanan, Minuman Dan Cemilan":
+elif menu_utama == "makanan, minuman dan cemilan":
     menu_makanan = str(input('Pilih Makanan (Ayam penyet/Soto ayam/Nasi goreng): '))
-    if menu_makanan == "Ayam penyet":
+    if menu_makanan == "ayam penyet":
         harga_makanan = 20000
-    elif menu_makanan == "Soto ayam":
+    elif menu_makanan == "soto ayam":
         harga_makanan = 15000
-    elif menu_makanan == "Nasi goreng":
+    elif menu_makanan == "nasi goreng":
         harga_makanan = 18000
     else:
         harga_makanan = 0
     jumlah_pesan_makanan = int(input('Masukkan Jumlah Pesanan Makanan: '))
     menu_minuman = str(input('Pilih Minuman (Teh manis/Es kopi/Nutrisar): '))
-    if menu_minuman == "Teh manis":
+    if menu_minuman == "teh manis":
         harga_minuman = 5000
-    elif menu_minuman == "Es kopi":
+    elif menu_minuman == "es kopi":
         harga_minuman = 6000
-    elif menu_minuman == "Nutrisari":
+    elif menu_minuman == "nutrisari":
         harga_minuman = 4000
     else:
         harga_minuman = 0
     jumlah_pesan_minuman = int(input('Masukkan Jumlah Pesanan Minuman: '))
     menu_cemilan = str(input('Pilih Cemilan (Aneka gorengan/Ciki-Ciki/Basreng): '))
-    if menu_cemilan == "Aneka gorengan":
+    if menu_cemilan == "aneka gorengan":
         harga_cemilan = 2500
-    elif menu_cemilan == "Ciki-Ciki":
+    elif menu_cemilan == "ciki ciki":
         harga_cemilan = 5000
-    elif menu_cemilan == "Basreng":
+    elif menu_cemilan == "basreng":
         harga_cemilan = 7000
     else:
         harga_cemilan = 0
     jumlah_pesan_cemilan = int(input('Masukkan Jumlah Pesanan Cemilan: '))
 
+menu_makanan = menu_makanan.lower()
+menu_minuman = menu_minuman.lower()
+menu_cemilan = menu_cemilan.lower()
 
-harga_barang = harga_makanan * jumlah_pesan_makanan + harga_minuman * jumlah_pesan_minuman + harga_cemilan * jumlah_pesan_cemilan
+harga_barang = (int(harga_makanan * jumlah_pesan_makanan) + int(harga_minuman * jumlah_pesan_minuman)
+                + int(harga_cemilan * jumlah_pesan_cemilan))
 total_belanja = harga_barang
 
 diskon = 0
 bonus = ""
-if jenis_pembeli == "Mahasiswa":
+if jenis_pembeli == "mahasiswa":
     if total_belanja >= 50000:
         diskon = total_belanja * 0.1
-    if menu_makanan == "Ayam penyet" and menu_minuman == "Teh manis":
-        bonus = "Gorengan 1 pcs"
+    if menu_makanan == "ayam penyet" and menu_minuman == "teh manis":
+        bonus = "gorengan 1 pcs"
     if menu_cemilan and jumlah_pesan_cemilan >= 20:
         bonus += " Es kopi"
 
