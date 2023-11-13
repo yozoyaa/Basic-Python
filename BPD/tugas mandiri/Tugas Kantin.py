@@ -51,7 +51,7 @@ elif menu_utama == "cemilan":
     else:
         harga_cemilan = 0
     jumlah_pesan_cemilan = int(input('Masukkan Jumlah Pesanan Cemilan: '))
-elif menu_utama == "makanan Dan minuman":
+elif menu_utama == "makanan dan minuman":
     menu_makanan = str(input('Pilih Makanan (Ayam penyet/Soto ayam/Nasi goreng): '))
     if menu_makanan == "ayam penyet":
         harga_makanan = 20000
