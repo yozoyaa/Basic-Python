@@ -1,7 +1,7 @@
 import openai
 # pip install openai << di cmd sebelum import openai
 
-openai.api_key = "<your API key"
+openai.api_key = "your API key"
 model_engine = "text-davinci-003"
 
 def chatbot(prompt):
