@@ -59,7 +59,7 @@ if harga_per_tiket == "Value error":
 else:
     total = harga_per_tiket * jumlah
     diskon = 0
-    if kelas == "Vip":
+    if kelas == "Vip" and jumlah >= 3:
         diskon = int(total * 0.15)
         total -= diskon
 
